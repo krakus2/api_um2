@@ -1,0 +1,101 @@
+html, body {
+       height: 100%;
+       margin: 0;
+       padding: 0;
+}
+
+#map{
+  width: 85vw;
+  height: 80vh;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 35px;
+  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.4);
+}
+
+#popupSpan{
+  visibility: hidden;
+  padding-top: 10px;
+}
+
+.headerInput{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  box-sizing: border-box;
+	height: 60px;
+	position: relative;
+  top: 17px;
+}
+
+#popup{
+  display: flex;
+  justify-content: center;
+}
+
+.move{
+  top: 0;
+  color: blue !important;
+  font-size: 12px;
+}
+input::-webkit-datetime-edit{
+  color: transparent;
+}
+input:focus::-webkit-datetime-edit{
+  color: #000;
+}
+
+input::-moz-datetime-edit{
+  color: transparent;
+}
+input:focus::-moz-datetime-edit{
+  color: #000;
+}
+
+input::placeholder {
+  color: transparent;
+  transition: all 0;
+}
+
+input:focus::placeholder{
+  color: grey;
+  transition: all 1s;
+}
+
+input#bus:focus{
+	border-bottom: 2px solid blue !important;
+	cursor:text !important;
+}
+input#bus:hover{
+	border-bottom: 2px solid black;
+  cursor: pointer;
+}
+
+span.disapear{
+	position: absolute;
+	color: grey;
+	transition: all 0.3s;
+	pointer-events: none;
+  margin-left: -500px;
+  margin-top: 4px;
+}
+
+input#bus{
+	border: none;
+	border-bottom: 1px solid grey;
+	width: 500px;
+	outline: none;
+	font-size: 18px;
+  background-color: var(--lightGrey);
+}
+
+#schedules{
+  width: 100vw;
+  height: 500px;
+  background-color: rgba(255, 100, 0, 0.1);
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

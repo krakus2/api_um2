@@ -1,0 +1,6 @@
+const api_key = "2797b5a7-48f4-42a3-a062-bf8cf76357d9"
+const mapsApi_key = "AIzaSyDl4DVYLh4h_5WdJ46t9_g0zwAqw57TJUU"
+
+52.336839 21.050962
+
+"start": "node ./bin/www" 

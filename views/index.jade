@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDl4DVYLh4h_5WdJ46t9_g0zwAqw57TJUU&libraries=places&')
+  script(src='/javascripts/content.js', type='text/javascript')
+  script(src="https://unpkg.com/axios/dist/axios.min.js")
+  .headerInput
+    form#busForm
+      input#bus(type="text", pattern="([Nn0-9eE]?[0-9-]{2})|(([Nn0-9eE]?[0-9-]{2} )([Nn0-9eE]?[0-9-]{2} ?)*)", placeholder='120 E-9 25 N12')
+      span.disapear Wprowadź numer linii, a nawet kilka oddzielonych spacją 
+  #popup
+    span#popupSpan Nie ma żadnego autobusu na trasie!
+  #map
+  #schedules
+  
+    
